@@ -1,0 +1,12 @@
+---
+- name: Installeer PHP
+  become: yes
+  apt:
+    name: php
+    state: present
+
+- name: Installeer PHP MySQL module
+  become: yes
+  apt:
+    name: php-mysql
+    state: present

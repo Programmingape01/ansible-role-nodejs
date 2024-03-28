@@ -1,0 +1,18 @@
+---
+- name: Installeren Nodejs
+  become: yes
+  apt:
+    name: nodejs
+    state: present
+
+- name: Installeren npm
+  become: yes
+  apt:
+    name: npm
+    state: present
+
+- name: Installeren jslint
+  become: yes
+  npm:
+    name: jslint
+    global: yes
